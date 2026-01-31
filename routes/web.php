@@ -10,6 +10,8 @@ Route::get('post/mensaje',[PostController::class,'Mensaje']);
 Route::get('post/about/{param}/{name?}',[PostController::class,'About']);
 Route::get('post/contacto',[PostController::class,'Contacto']);
 
+Route::
+
 Route::get('/', function () {
     return view('welcome');
 });

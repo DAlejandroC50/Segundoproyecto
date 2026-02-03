@@ -10,15 +10,20 @@
             $class="text-red-800 bg red-50 dark:text-red-300";
             break;
          case 'Warning':
-            $title = $title ?? 'Info alert';# code...
-            $class="text-blue-800 bg blue-50 dark:text-blue-300";
+            $title = $title ?? 'Warning alert';# code...
+            $class="text-yellow-800 bg yellow-50 dark:text-yellow-300";
             break;
-         case 'Info':
-            $title = $title ?? 'Info alert';# code...
-            $class="text-blue-800 bg blue-50 dark:text-blue-300";
+         case 'Success':
+            $title = $title ?? 'Success alert!';# code...
+            $class="text-green-800 bg green-50 dark:text-green-300";
             break;
         
         default:
-            # code...
-            break;
+            $title = $title ?? 'Info alert';# code...
+            $class="text-blue-800 bg blue-50 dark:text-blue-300";
     }
+@endphp
+<div {{$attributes->merge(['class'=>'p-4 text-sm rounded-lg'.$class])}} role="alert">
+    <!-- Podemos imprimir los atributos que se le pasan y mediante la función merge unimos-->
+    <p>{{atributes}}</p>
+</div>

@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class PrincipalController extends Controller
 {
-    //
+    public function index(){
+        //return "Bienvenido a la página principal";
+        return view("principal");
+    }
 }

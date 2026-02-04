@@ -13,6 +13,8 @@ Route::get('post/contacto',[PostController::class,'Contacto']);
  //-- Al momento de cargar la vista, estos cargaran ciertos plantillas(layouts) y componentes-->
 Route::get('/Principal',[PostController::class,'index']);
 Route::get('/Llamado',[PostController::class,'llamado_componente']);
+
+
 Route::get('/principalpagina',[PostController::class,'principal']);
 
 Route::get('/', function () {

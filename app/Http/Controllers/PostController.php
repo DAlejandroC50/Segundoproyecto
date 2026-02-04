@@ -25,7 +25,7 @@ class PostController extends Controller
         return view('llamadocomponente');
     }
 
-    public function principal({
+    public function principal(){
         return view('principal');
-    })
+    }
 }

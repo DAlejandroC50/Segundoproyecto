@@ -1,4 +1,5 @@
 @props(['type'=>'Info'])
+
 @php
     switch ($type) {
         case 'Info':
@@ -25,5 +26,7 @@
 @endphp
 <div {{$attributes->merge(['class'=>'p-4 text-sm rounded-lg'.$class])}} role="alert">
     <!-- Podemos imprimir los atributos que se le pasan y mediante la función merge unimos-->
-    <p>{{atributes}}</p>
+    <p>{{$attributes}}
+        {{$type}}
+    </p>
 </div>

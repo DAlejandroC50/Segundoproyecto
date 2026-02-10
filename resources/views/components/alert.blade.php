@@ -1,8 +1,10 @@
-@props(['type'=>'Info'])
-
+@props(['type'=>'Info']) <!-- Si en dado caso no le pasamos el valor de $type el valor por defecto es info-->
+<!-- Todo lo que se encuentre en esta directiva se va a trabajar con código php-->
 @php
     switch ($type) {
         case 'Info':
+        //Concatenamos el valor de variable validando que el contenido sea igual
+        //  al caso que se está leyendo en esos momentos
             $title = $title ?? 'Info alert';# code...
             $class="text-blue-800 bg blue-50 dark:text-blue-300";
             break;

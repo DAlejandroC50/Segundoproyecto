@@ -6,6 +6,9 @@
         <title>Laravel | Hello </title>
     </head>
     <body>
-        <h1>Hello Laravel!</h1>
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class='text-3xl font-bold underline'>Hello Laravel!</h1>
+            <h1>Segundo texto</h1>
+        </div>
     </body>
 </html>
